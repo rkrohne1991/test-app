@@ -1,0 +1,71 @@
+@import '/src/global-styles/Base';
+
+.section-template {
+  padding: 6.25rem 0;
+
+  &.bg-gray-light {
+    background-color: $gray-100;
+  }
+
+  &__subheader {
+    font-size: 1rem;
+    color: $primary;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.66666em;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.125rem;
+    }
+  }
+
+  &__header {
+    font-size: 1.75rem;
+    margin-top: 0.625rem;
+    color: $gray-800;
+    font-weight: 300;
+    line-height: 1.4em;
+
+    @include media-breakpoint-up(md) {
+      font-size: 2.25rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.what-we-offer {
+  margin-top: 5rem;
+
+  &__card {
+    &-img {
+      height: 17.1875rem;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &-overlay {
+      height: 17.1875rem;
+      background-color: rgba(0,0,0,0.3);
+    }
+
+    &-title {
+      font-size: 1rem;
+
+      &:before {
+        content: "";
+        width: 1.875rem;
+        height: 0.0625rem;
+        background: var(--bs-white);
+        top: -0.625rem;
+        position: absolute;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 1.125rem;
+      }
+    }
+  }
+}

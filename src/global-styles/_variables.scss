@@ -1,0 +1,78 @@
+// Custom Variables
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+// Color system
+
+// scss-docs-start gray-color-variables
+$gray-100: #f6f6f6 !default;
+$gray-200: #eaecee !default;
+$gray-500: #9EA8B2 !default;
+$gray-600: #778591 !default;
+$gray-700: #556677 !default;
+$gray-800: #2C3E50 !default;
+
+// scss-docs-start theme-color-variables
+$primary:       #8A3C05;
+$black:         #000;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif:      "Lato";
+$font-family-monospace:       "Lato";
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+
+$h1-font-size:                $font-size-base * 2 !default;
+$h2-font-size:                $h1-font-size !default;
+$h5-font-size:                $font-size-base * 1.125 !default;
+
+$headings-line-height:        1.5 !default;
+$primary-line-height:         1.5rem !default;
+$secondary-line-height:       1.66rem !default;
+
+$spacing1875:                 1.875rem !default;
+$spacing09375:                 0.9375rem !default;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                              $gray-700 !default;
+$link-decoration:                         none !default;
+$link-shade-percentage:                   20% !default;
+$link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-decoration:                   none !default;
+
+// Forms
+
+// scss-docs-start form-input-variables
+$input-padding-y:                       0 !default;
+$input-padding-x:                       0 !default;
+
+$input-border-radius:                   0 !default;
+$input-border-width:                    0 !default;
+$input-focus-box-shadow:                none !default;
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+// scss-docs-start input-btn-variables
+$input-btn-padding-y:         .375rem !default;
+$input-btn-padding-x:         .75rem !default;
+$input-btn-font-family:       null !default;
+$input-btn-font-size:         1.125rem !default;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+// scss-docs-start btn-variables
+$btn-padding-y:               1rem !default;
+$btn-padding-x:               2rem !default;
+$btn-font-size:               1rem !default;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:           5.625rem !default;

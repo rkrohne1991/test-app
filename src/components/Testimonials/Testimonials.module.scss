@@ -1,0 +1,114 @@
+@import '/src/global-styles/Base';
+
+.testimonials {
+  background-color: $gray-100;
+
+  &__carousel {
+    overflow: hidden;
+
+    &-wrapper {
+      padding: 3.125rem 1rem;
+
+      @include media-breakpoint-up(lg) {
+        padding: 6.25rem 5rem;
+      }
+    }
+
+    &-slides {
+      overflow-x: hidden;
+    }
+
+    & > a {
+      width: 1.5rem;
+      height: 1.5rem;
+      background: white;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin: 0 0 0.5rem 0;
+
+      &:active {
+        top: 0.0625rem;
+      }
+
+      &:focus {
+        background: $black;
+      }
+    }
+  }
+
+  &__nav {
+    list-style-type: none;
+
+    &-el {
+      padding: 0 0.5625rem;
+    }
+
+    &-button {
+      opacity: 0.4;
+      font-size: 0;
+      cursor: pointer;
+      border-width: 0.125rem;
+      border-style: solid;
+      border-radius: 0.6875rem;
+      padding: 0.1875rem 0.1875rem 0.125rem 0.125rem;
+      background-color: $gray-500;
+      color: $gray-500;
+      border-color: $gray-500;
+    }
+  }
+
+  &__slide {
+    &-wrapper {
+      height: 18.75rem;
+      background: $gray-200;
+      transform-origin: center center;
+      transform: scale(1);
+      transition: transform 0.5s;
+      padding: 0.625rem 0;
+    }
+
+    &-icon {
+      color: $primary;
+      width: 3rem;
+      height: 3rem;
+      z-index: 2;
+      top: -0.625rem;
+      left: -0.625rem;
+
+      &-wrapper {
+        span {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    &-body {
+      font-size: 1.375rem;
+      font-weight: 300;
+      line-height: 1.63636em;
+      padding: 0.625rem 0;
+    }
+
+    &-author {
+      font-size: 0.875rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      line-height: 1.125rem;
+      letter-spacing: 0.125rem;
+      margin-top: 1.875rem;
+      color: $gray-800;
+    }
+  }
+
+  &__image {
+    padding: 7.5rem 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+

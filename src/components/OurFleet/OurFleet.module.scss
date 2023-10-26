@@ -1,0 +1,42 @@
+@import '/src/global-styles/_variables';
+
+.section-template {
+  padding: 6.25rem 0;
+
+  &__subheader {
+    font-size: 1.125rem;
+    color: $primary;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.66666em;
+  }
+
+  &__header {
+    font-size: 2.5rem;
+    margin-top: 0.625rem;
+    color: $gray-800;
+    font-weight: 300;
+    line-height: 1.4em;
+  }
+}
+
+.our-fleet {
+  margin-top: 5rem;
+
+  &__card {
+    &-img {
+      height: 15.625rem;
+      object-fit: cover;
+    }
+
+    &-overlay {
+      height: 15.625rem;
+      background-color: rgba(0,0,0,0.3);
+    }
+
+    &-circle {
+      width: 1.875rem;
+      height: 1.875rem;
+    }
+  }
+}

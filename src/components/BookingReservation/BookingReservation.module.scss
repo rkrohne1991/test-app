@@ -1,0 +1,41 @@
+@import '/src/global-styles/Base';
+
+.booking-reservation {
+
+  &__form, &__wrapper {
+    position: relative;
+  }
+
+  &__box {
+    border-right: 0.0625rem solid $gray-200;
+    border-bottom: 0.0625rem solid $gray-200;
+    padding: 1.25rem;
+    height: 100%;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__label {
+    color: $gray-800;
+  }
+
+  &__submit {
+    font-size: 0.875rem;
+    font-weight: 400;
+    border-width: 0.125rem;
+    border-radius: 5.625rem;
+    padding: 1rem 2rem;
+    background-color: $primary;
+    border-color: $primary;
+    max-width: 10rem;
+    color:  var(--bs-white);
+
+    &:hover {
+      background-color: var(--bs-white);
+      color: $primary;
+      border-color: $primary;
+    }
+  }
+}

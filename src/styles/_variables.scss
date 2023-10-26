@@ -1,0 +1,29 @@
+// Custom Variables
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+// Color system
+
+// scss-docs-start gray-color-variables
+$gray-100: #f6f6f6 !default;
+$gray-200: #eaecee !default;
+$gray-500: #9EA8B2 !default;
+$gray-600: #778591 !default;
+$gray-700: #556677 !default;
+$gray-800: #2C3E50 !default;
+
+// scss-docs-start theme-color-variables
+$primary:       #8A3C05;
+$black:         #000;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif:      "Lato";
+$font-family-monospace:       "Lato";
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+
+$h1-font-size:                $font-size-base * 2 !default;
+$h2-font-size:                $h1-font-size !default;
+$h5-font-size:                $font-size-base * 1.125 !default;

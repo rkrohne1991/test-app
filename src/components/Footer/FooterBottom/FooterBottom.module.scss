@@ -1,0 +1,18 @@
+@import '/src/global-styles/Base';
+
+.footer-bottom {
+  &__wrapper {
+    font-size: 0.9375rem;
+    padding-top: 1.5625rem;
+    padding-bottom: 2.5rem;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+
+      social-icons div {
+        justify-content: center !important;
+      }
+    }
+  }
+}
